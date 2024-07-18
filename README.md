@@ -24,7 +24,7 @@ O Sistema de Registro de Presença (SRP) é uma aplicação desenvolvida para fa
 
 1. Clone o repositório:
     ```sh
-    https://github.com/EricSantosdm/Sistema-de-Registro-de-Presenca-SRP-.git
+    https://github.com/EricSantosdm/Sistema-de-Registro-de-Presenca-SRP.git
     ```
 2. Navegue até o diretório do projeto:
     ```sh
