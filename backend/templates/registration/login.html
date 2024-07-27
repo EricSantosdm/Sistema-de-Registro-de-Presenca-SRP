@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load widget_tweaks %}
+
+{% block content %}
+<form method="post" action="{% url 'login' %}">
+	{% csrf_token %}
+	<!-- login -->
+	<div class="card">
+		<div class="flex flex-col gap-20">
+			<h1 class="flex items-center gap-10 text-[1.375rem] font-medium text-neutral-100">
+				<svg class="w-40 h-40">
+					<use xlink:href="#icon_security"></use>
+				</svg>
+				Entrar na conta
+			</h1>
+			<p class="subtitle text-neutral-70">Bem vindo de volta, Insira seu e-mail e senha para entrar em
+				sua conta.
+			</p>
+
+		</div>
+		<div class="flex flex-col gap-32 ">
+			<div class="flex flex-col gap-24 mt-24">
+
+				<div class="flex flex-col gap-4 ">
+					<label class="label">Email</label>
+					{{form.username|add_class:'input-text h-48'|attr:'placeholder:E-mail'|attr:'js-ativo'}}
+				</div>
+				<div class="flex flex-col gap-4 ">
+					<label class="label">Senha</label>
+					<div class="input-icon">
+						<div class="show-password" js-password>
+							{{form.password|add_class:'input-text h-48'|attr:'js-input-password'|attr:'placeholder:Senha'|attr:'js-ativo'}}
+							<div class="password">
+								<ion-icon class="eye" name="eye-outline"></ion-icon>
+								<ion-icon class="eye-off" name="eye-off-outline"></ion-icon>
+							</div>
+						</div>
+					</div>
+				</div>
+				{{form.non_field_errors}}
+			</div>
+			<div class="flex items-center justify-between">
+				<div class="radio-container round size-16 flex items-center">
+					<label class="check-label text-sm">
+						<input type="checkbox" class="sr-only">
+						<span class="radio-circle">
+							<i class="radio-circle-inner"></i>
+						</span>
+						Permanecer conectado
+					</label>
+				</div>
+				<div>
+					<a href="{% url 'password_reset' %}"
+						class="text-neutral-70  appearance-none text-sm hover:underline">
+						Esqueceu a senha?
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		<button class="btn icon-left h-48 mt-32">
+			Entrar na conta
+			<svg>
+				<use xlink:href="#icon_btnEntrar"></use>
+			</svg>
+		</button>
+	</div>
+	</div>
+</form>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+	(function init() {
+		GLOBAL.removeSidebar()
+	})()
+</script>
+{% endblock %}
