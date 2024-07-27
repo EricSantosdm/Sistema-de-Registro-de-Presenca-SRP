@@ -1,0 +1,46 @@
+{
+  "name": "srp",
+  "version": "1.0.0",
+  "description": "",
+  "author": "srp",
+  "license": "ISC",
+  "scripts": {
+    "watch-css": "parcel watch front_assets/static/front_assets/src/css/tailwind.css --dist-dir front_assets/static/front_assets/dist/css --no-cache -p 2369",
+    "watch-js": "parcel watch front_assets/static/front_assets/src/js/main.js --dist-dir front_assets/static/front_assets/dist/js --no-cache -p 2368",
+    "watch-global": "parcel watch front_assets/static/front_assets/src/js/GLOBAL.js --dist-dir front_assets/static/front_assets/dist/js --no-cache -p 2361",
+    "watch-vue": "parcel watch front_assets/static/front_assets/src/js/vue/index.js --dist-dir front_assets/static/front_assets/dist/js --no-cache -p 2362 ",
+    "watch-scss": "parcel watch front_assets/static/front_assets/src/sass/style.scss --dist-dir front_assets/static/front_assets/dist/css --no-cache -p 2367",
+    "build-css": "parcel build front_assets/static/front_assets/src/css/tailwind.css --dist-dir front_assets/static/front_assets/dist/css --no-cache",
+    "build-js": "parcel build front_assets/static/front_assets/src/js/main.js --dist-dir front_assets/static/front_assets/dist/js --no-content-hash --no-cache",
+    "build-scss": "parcel build front_assets/static/front_assets/src/sass/style.scss --dist-dir front_assets/static/front_assets/dist/css --no-content-hash --no-cache",
+    "build-vue": "parcel build front_assets/static/front_assets/src/js/vue/index.js --dist-dir front_assets/static/front_assets/dist/js --no-content-hash --no-cache",
+    "dev": "concurrently --kill-others \"npm run watch-css\" \"npm run watch-js\" \"npm run watch-scss\" \"npm run watch-global\" \"npm run watch-vue\"",
+    "build": "concurrently  \"npm run build-css\" \"npm run build-js\" \"npm run build-scss\" \"npm run build-vue\""
+  },
+  "browserslist": "> 0.5%, not dead",
+  "devDependencies": {
+    "@parcel/config-default": "^2.5.0",
+    "@parcel/core": "^2.5.0",
+    "@parcel/transformer-sass": "^2.5.0",
+    "@parcel/transformer-vue": "^2.8.0",
+    "autoprefixer": "^10.4.7",
+    "concurrently": "^7.2.0",
+    "parcel": "^2.5.0",
+    "parcel-bundler": "^1.12.5",
+    "postcss": "^8.4.14",
+    "postcss-color-function": "^4.1.0",
+    "postcss-comment": "^2.0.0",
+    "postcss-import": "^14.1.0",
+    "postcss-mixins": "^9.0.2",
+    "postcss-nested": "^5.0.6",
+    "postcss-simple-vars": "^6.0.3",
+    "tailwindcss": "^3.0.24",
+    "tailwindcss-themer": "^2.0.1"
+  },
+  "dependencies": {
+    "currency.js": "^2.0.4",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.1",
+    "pandas": "^0.0.3"
+  }
+}

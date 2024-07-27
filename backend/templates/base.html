@@ -1,0 +1,87 @@
+{% load static %}
+{% load home_tags %}
+{% is_dev as is_dev %}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Corona Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="{% static 'front_assets/src/vendors/mdi/css/materialdesignicons.min.css' %}">
+    <link rel="stylesheet" href="{% static 'front_assets/src/vendors/css/vendor.bundle.base.css' %}">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="{% static 'front_assets/src/vendors/jvectormap/jquery-jvectormap.css' %}">
+    <link rel="stylesheet" href="{% static 'front_assets/src/vendors/flag-icon-css/css/flag-icon.min.css' %}">
+    <link rel="stylesheet" href="{% static 'front_assets/src/vendors/owl-carousel-2/owl.carousel.min.css' %}">
+    <link rel="stylesheet" href="{% static 'front_assets/src/vendors/owl-carousel-2/owl.theme.default.min.css' %}">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="{% static 'front_assets/src/sass/style.css' %}">
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="{% static 'front_assets/src/images/favicon.png' %}" />
+
+    {% block extra_style %}{% endblock %}
+</head>
+
+<body>
+    <div class="container-scroller">
+        {% if not hide_sidebar %}
+        {% include './components/sidebar.html' %}
+        {% endif %}
+        <!-- partial -->
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_navbar.html -->
+            {% if not hide_navbar %}
+            {% include './components/navbar/navbar.html' %}
+            {% endif %}
+
+            <!-- partial -->
+            <div class="main-panel">
+                <div class="content-wrapper">
+                    {% block content %}{% endblock %}
+                </div>
+                <!-- content-wrapper ends -->
+                <!-- partial:partials/_footer.html -->
+
+                {% if not hide_footer %}
+                {% include './components/footer.html' %}
+                {% endif %}
+                <!-- partial -->
+            </div>
+            <!-- main-panel ends -->
+        </div>
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="{% static 'front_assets/src/vendors/js/vendor.bundle.base.js' %}"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="{% static 'front_assets/src/vendors/chart.js/Chart.min.js' %}"></script>
+    <script src="{% static 'front_assets/src/vendors/progressbar.js/progressbar.min.js' %}"></script>
+    <script src="{% static 'front_assets/src/vendors/jvectormap/jquery-jvectormap.min.js' %}"></script>
+    <script src="{% static 'front_assets/src/vendors/jvectormap/jquery-jvectormap-world-mill-en.js' %}"></script>
+    <script src="{% static 'front_assets/src/vendors/owl-carousel-2/owl.carousel.min.js' %}"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="{% static 'front_assets/src/js/modules/off-canvas.js' %}"></script>
+    <script src="{% static 'front_assets/src/js/modules/hoverable-collapse.js' %}"></script>
+    <script src="{% static 'front_assets/src/js/modules/misc.js' %}"></script>
+    <script src="{% static 'front_assets/src/js/modules/settings.js' %}"></script>
+    <script src="{% static 'front_assets/src/js/modules/todolist.js' %}"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="{% static 'front_assets/src/js/modules/dashboard.js' %}"></script>
+    <!-- End custom js for this page -->
+
+    {% block extra_js %}{% endblock %}
+</body>
+
+</html>
