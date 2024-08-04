@@ -1,1 +1,1 @@
-{"mappings":"","sources":["front_assets/static/front_assets/src/css/utilities/util.css","front_assets/static/front_assets/src/css/tailwind.css"],"sourcesContent":[null,"\n/* /////////////////////////////////////////// */\n\n\n/* /////////////////////////////////////////// */\n/* \tUTILITIES */\n@import \"./utilities/util.css\";\n\n"],"names":[],"version":3,"file":"tailwind.css.map","sourceRoot":"../../../../../"}
+{"mappings":"","sources":[],"sourcesContent":[],"names":[],"version":3,"file":"tailwind.css.map","sourceRoot":"../../../../../"}
