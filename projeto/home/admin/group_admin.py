@@ -8,4 +8,4 @@ admin.site.unregister(Group)
 
 @admin.register(Group)
 class GroupAdmin(BaseGroupAdmin, ImportExportModelAdmin):
-    ...
+    pass
