@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     # Apps
     "front_assets",
     "home",
+    "srp_app",
     # Libs
     "advanced_filters",
     "debug_toolbar",
