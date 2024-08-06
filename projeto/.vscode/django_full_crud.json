@@ -1,3 +1,21 @@
 {
-    "project_name": ""
+  "project_name": "",
+  "simple_admin": true,
+
+  "make_forms": false,
+  "make_forms_init": false,
+
+  "make_serializers": false,
+  "make_serializers_init": false,
+
+  "make_templates": false,
+
+  "make_views": false,
+  "make_views_init": false,
+
+  "make_viewsets": false,
+  "make_viewsets_init": false,
+
+  "admin_imports": ["from novadata_utils.admin import NovadataModelAdmin"],
+  "admin_superclass": "NovadataModelAdmin"
 }
