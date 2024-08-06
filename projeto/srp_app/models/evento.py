@@ -16,6 +16,11 @@ class Evento(AbstractNovadataModel):
         verbose_name="Data inicial",
     )
 
+    data_final = models.DateTimeField(
+        verbose_name="Data final",
+        null=True,
+    )
+
     def __str__(self):
         """Método que retorna a representação do objeto como string."""
         return str(self.nome)
