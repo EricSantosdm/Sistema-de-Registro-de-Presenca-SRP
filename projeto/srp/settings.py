@@ -29,11 +29,13 @@ INSTALLED_APPS = [
     # Apps
     "front_assets",
     "home",
+    "srp_app",
     # Libs
     "advanced_filters",
     "debug_toolbar",
     "django_admin_listfilter_dropdown",
     "django_browser_reload",
+    "django_full_crud",
     "django_object_actions",
     "drf_spectacular",
     "drf_spectacular_sidecar",
