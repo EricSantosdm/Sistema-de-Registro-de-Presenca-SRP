@@ -16,7 +16,7 @@
     "build-vue": "parcel build front_assets/static/front_assets/src/js/vue/index.js --dist-dir front_assets/static/front_assets/dist/js --no-content-hash --no-cache",
     "dev": "concurrently --kill-others \"npm run watch-css\" \"npm run watch-js\" \"npm run watch-scss\" \"npm run watch-global\" \"npm run watch-vue\"",
     "build": "concurrently  \"npm run build-css\" \"npm run build-js\" \"npm run build-scss\" \"npm run build-vue\"",
-    "prepare": "cd .. husky install ./projeto/.husky"
+    "prepare": "cd .. && husky install"
   },
   "browserslist": "> 0.5%, not dead",
   "devDependencies": {
