@@ -1,9 +1,9 @@
-PWD /home/flavio/projetos/srp/artefatos/artigo
+PWD /home/natalia/natalia/projetos_ufersa/srp_workspace/srp/artefatos/artigo
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/flavio/projetos/srp/artefatos/artigo/main.tex
+INPUT /home/natalia/natalia/projetos_ufersa/srp_workspace/srp/artefatos/artigo/main.tex
 OUTPUT logs/main.log
 INPUT ./IEEEtran.cls
 INPUT ./IEEEtran.cls
