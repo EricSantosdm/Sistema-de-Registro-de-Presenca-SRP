@@ -15,7 +15,8 @@
     "build-scss": "parcel build front_assets/static/front_assets/src/sass/style.scss --dist-dir front_assets/static/front_assets/dist/css --no-content-hash --no-cache",
     "build-vue": "parcel build front_assets/static/front_assets/src/js/vue/index.js --dist-dir front_assets/static/front_assets/dist/js --no-content-hash --no-cache",
     "dev": "concurrently --kill-others \"npm run watch-css\" \"npm run watch-js\" \"npm run watch-scss\" \"npm run watch-global\" \"npm run watch-vue\"",
-    "build": "concurrently  \"npm run build-css\" \"npm run build-js\" \"npm run build-scss\" \"npm run build-vue\""
+    "build": "concurrently  \"npm run build-css\" \"npm run build-js\" \"npm run build-scss\" \"npm run build-vue\"",
+    "prepare": "cd .. && husky install"
   },
   "browserslist": "> 0.5%, not dead",
   "devDependencies": {
@@ -25,7 +26,7 @@
     "@parcel/transformer-vue": "^2.8.0",
     "autoprefixer": "^10.4.7",
     "concurrently": "^7.2.0",
-    "husky": "^8.0.3",
+    "husky": "^8.0",
     "parcel": "^2.5.0",
     "parcel-bundler": "^1.12.5",
     "postcss": "^8.4.14",
