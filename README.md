@@ -35,7 +35,6 @@ O Sistema de Registro de Presença (SRP) é uma aplicação desenvolvida para fa
     python -m venv venv
     ```
 4. Ative o ambiente virtual:
-
     - No Windows:
         ```sh
         venv\Scripts\activate
