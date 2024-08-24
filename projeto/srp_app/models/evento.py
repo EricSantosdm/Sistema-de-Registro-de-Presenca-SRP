@@ -1,6 +1,8 @@
 from django.db import models
 from novadata_utils.models import AbstractNovadataModel
 
+from .visitante import Visitante
+
 
 class Evento(AbstractNovadataModel):
     nome = models.CharField(
@@ -19,6 +21,12 @@ class Evento(AbstractNovadataModel):
     data_final = models.DateTimeField(
         verbose_name="Data final",
         null=True,
+    )
+
+    visitantes = models.ManyToManyField(
+        to=Visitante,
+        verbose_name="Visitantes",
+        blank=True,
     )
 
     def __str__(self):
