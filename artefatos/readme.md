@@ -1,6 +1,8 @@
 # Requisitos do Sistema de Registro de Presença (SRP)
 
 ## Requisitos Funcionais
+----
+----
 
 ### RF01
 **Nome:** Registro de Presença via QR Code
@@ -32,7 +34,8 @@
 **Fluxo secundário 1:**
 - O participante tenta escanear um QR Code inválido.
   1. O sistema exibe uma mensagem de erro indicando que o QR Code não é válido.
-
+----
+----
 ### RF02
 **Nome:** Geração de Relatórios de Frequência
 
@@ -61,7 +64,8 @@
 **Fluxo secundário 1:**
 - O administrador tenta gerar um relatório para um evento sem registros de presença.
   1. O sistema informa que não há dados suficientes para gerar o relatório.
-
+----
+----
 ### RF03
 **Nome:** Controle de Participantes
 
@@ -90,7 +94,8 @@
 **Fluxo secundário 1:**
 - O administrador tenta cadastrar um participante com e-mail duplicado.
   1. O sistema exibe uma mensagem de erro indicando que o e-mail já está em uso.
-
+----
+----
 ### RF04
 **Nome:** Cadastro Manual de Presença
 
@@ -119,7 +124,8 @@
 **Fluxo secundário 1:**
 - O administrador não encontra o participante pelo nome ou identificação.
   1. O sistema exibe uma mensagem de erro indicando que o participante não foi encontrado.
-
+----
+----
 ### RF05
 **Nome:** Cadastro de Usuários
 
@@ -148,7 +154,8 @@
 **Fluxo secundário 1:**
 - O administrador tenta cadastrar um usuário com e-mail duplicado.
   1. O sistema exibe uma mensagem de erro indicando que o e-mail já está em uso.
-
+----
+----
 ### RF06
 **Nome:** Interface Amigável
 
@@ -177,9 +184,11 @@
 **Fluxo secundário 1:**
 - O usuário acessa o sistema em um dispositivo com tela menor.
   1. O sistema ajusta automaticamente a interface para o tamanho da tela, mantendo a usabilidade.
-
+----
+----
 ## Requisitos Não Funcionais
-
+----
+----
 ### RNF01
 **Nome:** Desempenho
 
@@ -207,7 +216,8 @@
 **Fluxo secundário 1:**
 - A operação leva mais de 2 segundos para ser concluída.
   1. O sistema gera um log de desempenho e alerta o administrador.
-
+----
+----
 ### RNF02
 **Nome:** Segurança
 
@@ -236,7 +246,8 @@
 **Fluxo secundário 1:**
 - O sistema detecta uma tentativa de ataque (e.g., SQL Injection).
   1. O sistema bloqueia a tentativa e alerta o administrador.
-
+----
+----
 ### RNF03
 **Nome:** Disponibilidade
 
@@ -264,7 +275,8 @@
 **Fluxo secundário 1:**
 - O sistema entra em modo de manutenção programada.
   1. O sistema exibe uma mensagem informando o período de manutenção e quando estará disponível novamente.
-
+----
+----
 ### RNF04
 **Nome:** Manutenibilidade
 
@@ -293,7 +305,8 @@
 **Fluxo secundário 1:**
 - Uma atualização falha durante a implementação.
   1. A equipe reverte para a versão anterior e investiga a causa do problema.
-
+----
+----
 ### RNF05
 **Nome:** Escalabilidade
 
@@ -321,3 +334,5 @@
 **Fluxo secundário 1:**
 - A carga excede a capacidade atual do sistema.
   1. O sistema alerta os administradores para a necessidade de expansão de infraestrutura.
+----
+----
