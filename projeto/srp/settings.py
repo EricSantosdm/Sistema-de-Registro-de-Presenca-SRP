@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     "drf_spectacular_sidecar",
     "import_export",
     "novadata_utils",
+    "qr_code",
     "rangefilter",
     "rest_framework",
     "widget_tweaks",
