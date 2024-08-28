@@ -8,4 +8,9 @@ urlpatterns = [
         views.inscreverse,
         name="inscreverse",
     ),
+    path(
+        "sucesso_inscricao/<int:pk>/",
+        views.SucessoInscricaoView.as_view(),
+        name="sucesso_inscricao",
+    ),
 ]

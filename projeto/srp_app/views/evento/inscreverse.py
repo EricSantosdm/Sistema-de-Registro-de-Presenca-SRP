@@ -21,4 +21,7 @@ def inscreverse(request, id_evento):
     if not participante_ja_existe:
         ParticipanteEvento.objects.create(evento=evento, usuario=request.user)
 
-    return reverse_lazy_plus("home")
+    return reverse_lazy_plus(
+        "sucesso_inscricao",
+        url_params=[evento.id],
+    )
