@@ -1,1 +1,5 @@
-__all__ = []
+from .evento import inscreverse
+
+__all__ = [
+    inscreverse,
+]

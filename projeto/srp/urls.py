@@ -19,6 +19,10 @@ urlpatterns = [
         "",
         include("home.urls"),
     ),
+    path(
+        "srp_app/",
+        include("srp_app.urls"),
+    ),
     # Regsitragion urls
     path(
         "",
