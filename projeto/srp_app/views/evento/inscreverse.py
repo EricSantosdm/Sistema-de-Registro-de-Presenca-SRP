@@ -6,8 +6,19 @@ from srp_app.models import Evento, ParticipanteEvento
 
 @login_required
 def inscreverse(request, id_evento):
-    """Faz a inscrição de um usuário no evento da url."""
+    """
+    Faz a inscrição de um usuário no evento da url.
+
+    Regra 1: Se o usuário já for participante do evento, não faz nada.
+    """
     evento = get_object_or_404(Evento, id=id_evento)
-    ParticipanteEvento.objects.create(evento=evento, usuario=request.user)
+
+    participante_ja_existe = ParticipanteEvento.objects.filter(
+        evento=evento,
+        usuario=request.user,
+    ).exists()
+
+    if not participante_ja_existe:
+        ParticipanteEvento.objects.create(evento=evento, usuario=request.user)
 
     return reverse_lazy_plus("home")
