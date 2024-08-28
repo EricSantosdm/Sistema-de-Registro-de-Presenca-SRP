@@ -13,12 +13,7 @@ def inscreverse(request, id_evento):
     """
     evento = get_object_or_404(Evento, id=id_evento)
 
-    participante_ja_existe = ParticipanteEvento.objects.filter(
-        evento=evento,
-        usuario=request.user,
-    ).exists()
-
-    if not participante_ja_existe:
+    if not evento.usuario_atual_inscrito:
         ParticipanteEvento.objects.create(evento=evento, usuario=request.user)
 
     return reverse_lazy_plus(
