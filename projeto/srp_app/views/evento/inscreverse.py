@@ -13,9 +13,13 @@ def inscreverse(request, id_evento):
     """
     evento = get_object_or_404(Evento, id=id_evento)
 
-    if not evento.usuario_atual_inscrito:
-        ParticipanteEvento.objects.create(evento=evento, usuario=request.user)
+    if evento.usuario_atual_inscrito:
+        return reverse_lazy_plus(
+            "ja_inscrito",
+            url_params=[evento.id],
+        )
 
+    ParticipanteEvento.objects.create(evento=evento, usuario=request.user)
     return reverse_lazy_plus(
         "sucesso_inscricao",
         url_params=[evento.id],

@@ -9,6 +9,11 @@ urlpatterns = [
         name="inscreverse",
     ),
     path(
+        "ja_inscrito/<int:pk>/",
+        views.JaInscritoView.as_view(),
+        name="ja_inscrito",
+    ),
+    path(
         "sucesso_inscricao/<int:pk>/",
         views.SucessoInscricaoView.as_view(),
         name="sucesso_inscricao",
