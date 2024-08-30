@@ -32,9 +32,17 @@ class Evento(AbstractNovadataModel):
 
     @property
     def usuario_atual_inscrito(self):
-        """Método que retorna se o usuário atual está inscrito no evento."""
+        """Informa se o usuário atual está inscrito no evento."""
         return self.participanteevento_set.filter(
             usuario=get_current_user()
+        ).exists()
+
+    @property
+    def usuario_atual_presenca(self):
+        """Informa se o usuário atual está com presença marcada no evento."""
+        return self.participanteevento_set.filter(
+            usuario=get_current_user(),
+            presenca=True,
         ).exists()
 
     def __str__(self):

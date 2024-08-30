@@ -14,6 +14,11 @@ urlpatterns = [
         name="ja_inscrito",
     ),
     path(
+        "marcar_presenca/<int:id_evento>/",
+        views.marcar_presenca,
+        name="marcar_presenca",
+    ),
+    path(
         "sucesso_inscricao/<int:pk>/",
         views.SucessoInscricaoView.as_view(),
         name="sucesso_inscricao",
