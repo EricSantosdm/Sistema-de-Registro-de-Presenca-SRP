@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.17)  1 SEP 2024 13:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.17)  1 SEP 2024 13:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -286,7 +286,10 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./sections/1-introducao.tex) (./sections/2-fundamentacao_teorica.tex) (./sections/3-abordagem.tex) (./sections/4-consideracoes_finais_trabalhos_futuros.tex) (logs/main.bbl)
+) (./sections/1-introducao.tex) (./sections/2-fundamentacao_teorica.tex) (./sections/3-abordagem.tex) (./sections/4-consideracoes_finais_trabalhos_futuros.tex) (logs/main.bbl [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -298,24 +301,22 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
+[2
 
 ] (logs/main.aux) ) 
 Here is how much of TeX's memory you used:
- 5239 strings out of 480154
- 83542 string characters out of 5893788
- 394228 words of memory out of 5000000
- 23129 multiletter control sequences out of 15000+600000
+ 5245 strings out of 480154
+ 83614 string characters out of 5893788
+ 409243 words of memory out of 5000000
+ 23135 multiletter control sequences out of 15000+600000
  505233 words of font info for 94 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
- 55i,8n,62p,270b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,62p,1092b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on logs/main.pdf (1 page, 60676 bytes).
+Output written on logs/main.pdf (2 pages, 69501 bytes).
 PDF statistics:
- 34 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 37 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

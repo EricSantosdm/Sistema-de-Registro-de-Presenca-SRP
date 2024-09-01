@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex logs/main"] 1725207273 "logs/main.aux" "logs/main.bbl" "logs/main" 1725207273
+["bibtex logs/main"] 1725207802 "logs/main.aux" "logs/main.bbl" "logs/main" 1725208098
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/acm.bst" 1292289607 21064 c61a48664f3c347ce7f73c1a6a530506 ""
-  "logs/main.aux" 1725207273 912 9ee1f1ec83e935b9fd128dda909a7d74 "pdflatex"
-  "references.bib" 1724501062 203 46998ffd6e516427dd03571fa7e2f2ef ""
+  "logs/main.aux" 1725208098 1172 c65b508ea7604c4586f3144ffd41e3f8 "pdflatex"
+  "references.bib" 1725207700 1683 b3a560aa5af4d06ad2df789fa4e2073f ""
   (generated)
   "logs/main.bbl"
   "logs/main.blg"
-["pdflatex"] 1725207273 "/home/flavio/projetos/srp/artefatos/artigo/main.tex" "logs/main.pdf" "main" 1725207273
+["pdflatex"] 1725208098 "/home/flavio/projetos/srp/artefatos/artigo/main.tex" "logs/main.pdf" "main" 1725208098
   "/etc/texmf/web2c/texmf.cnf" 1723912154 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/flavio/projetos/srp/artefatos/artigo/main.tex" 1725207198 2341 f07cfd2b6369924c585243a81ca8f5ff ""
+  "/home/flavio/projetos/srp/artefatos/artigo/main.tex" 1725207297 2341 f07cfd2b6369924c585243a81ca8f5ff ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -80,10 +80,10 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723912287 162899 515de6df2324cca4eba6407bef60e07c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723913299 1436577 2a07a970d51f0c6c40811b60a6f89195 ""
   "IEEEtran.cls" 1724501062 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "logs/main.aux" 1725207273 912 9ee1f1ec83e935b9fd128dda909a7d74 "pdflatex"
-  "logs/main.bbl" 1725207273 242 c69af2bb485c5895f886ee9e1a83d0c1 "bibtex logs/main"
-  "main.tex" 1725207198 2341 f07cfd2b6369924c585243a81ca8f5ff ""
-  "sections/1-introducao.tex" 1725207147 75 b79341b7a6c912954bca927f4bf605c8 ""
+  "logs/main.aux" 1725208098 1172 c65b508ea7604c4586f3144ffd41e3f8 "pdflatex"
+  "logs/main.bbl" 1725207802 1352 d8499a039f48558f98f55763aaee1d8a "bibtex logs/main"
+  "main.tex" 1725207297 2341 f07cfd2b6369924c585243a81ca8f5ff ""
+  "sections/1-introducao.tex" 1725208098 2481 f78be092a8739af3096f72fdb0db15e6 ""
   "sections/2-fundamentacao_teorica.tex" 1725207222 110 c0f2c5a2b7991febcb68042e320cb7d7 ""
   "sections/3-abordagem.tex" 1725207239 68 478dbb1de545b98d2452d7e92bc16916 ""
   "sections/4-consideracoes_finais_trabalhos_futuros.tex" 1725207272 162 749558d0a20e09b690435e7f57c99278 ""
