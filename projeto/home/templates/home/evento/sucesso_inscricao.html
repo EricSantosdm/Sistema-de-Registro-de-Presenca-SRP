@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<h1>Sucesso na inscrição</h1>
+<p>Você se increveu no evento {{ object.nome }}.</p>
+<p>Dados do evento:</p>
+<ul>
+	<li>Nome: {{ object.nome }}</li>
+	<li>Descricao: {{ object.descricao }}</li>
+	<li>Início: {{ object.data_inicial }}</li>
+	<li>Fim: {{ object.data_final }}</li>
+</ul>
+{% endblock %}

@@ -1,3 +1,4 @@
+from crum import get_current_user
 from django.db import models
 from novadata_utils.models import AbstractNovadataModel
 
@@ -28,6 +29,21 @@ class Evento(AbstractNovadataModel):
         verbose_name="Visitantes",
         blank=True,
     )
+
+    @property
+    def usuario_atual_inscrito(self):
+        """Informa se o usuário atual está inscrito no evento."""
+        return self.participanteevento_set.filter(
+            usuario=get_current_user()
+        ).exists()
+
+    @property
+    def usuario_atual_presenca(self):
+        """Informa se o usuário atual está com presença marcada no evento."""
+        return self.participanteevento_set.filter(
+            usuario=get_current_user(),
+            presenca=True,
+        ).exists()
 
     def __str__(self):
         """Método que retorna a representação do objeto como string."""
