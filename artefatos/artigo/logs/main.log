@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.17)  17 AUG 2024 14:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.17)  1 SEP 2024 13:09
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/natalia/natalia/projetos_ufersa/srp_workspace/srp/artefatos/artigo/main.tex
-(/home/natalia/natalia/projetos_ufersa/srp_workspace/srp/artefatos/artigo/main.tex
+**/home/flavio/projetos/srp/artefatos/artigo/main.tex
+(/home/flavio/projetos/srp/artefatos/artigo/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (./IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
@@ -119,7 +119,7 @@ Package: babel 2022/01/26 3.70 The Babel package
  (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language5). Reported on input line 111.
+(babel)             (\language3). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
 )) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
@@ -286,7 +286,7 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./sections/introduction.tex) (logs/main.bbl)
+) (./sections/introducao.tex) (logs/main.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -305,12 +305,12 @@ Before submitting the final camera ready copy, remember to:
 ] (logs/main.aux) ) 
 Here is how much of TeX's memory you used:
  5227 strings out of 480154
- 83066 string characters out of 5893788
+ 82964 string characters out of 5893788
  394200 words of memory out of 5000000
  23126 multiletter control sequences out of 15000+600000
  506287 words of font info for 99 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
- 55i,8n,62p,300b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,8n,62p,270b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
 Output written on logs/main.pdf (1 page, 68498 bytes).
 PDF statistics:

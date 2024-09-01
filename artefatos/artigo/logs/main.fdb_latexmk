@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex logs/main"] 1723913730 "logs/main.aux" "logs/main.bbl" "logs/main" 1723915669
+["bibtex logs/main"] 1725206973 "logs/main.aux" "logs/main.bbl" "logs/main" 1725206974
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/acm.bst" 1292289607 21064 c61a48664f3c347ce7f73c1a6a530506 ""
-  "logs/main.aux" 1723915669 419 ad38690f608b6ee774e8f0ca2a0666aa "pdflatex"
-  "references.bib" 1723910931 203 46998ffd6e516427dd03571fa7e2f2ef ""
+  "logs/main.aux" 1725206974 419 ad38690f608b6ee774e8f0ca2a0666aa "pdflatex"
+  "references.bib" 1724501062 203 46998ffd6e516427dd03571fa7e2f2ef ""
   (generated)
   "logs/main.bbl"
   "logs/main.blg"
-["pdflatex"] 1723915669 "/home/natalia/natalia/projetos_ufersa/srp_workspace/srp/artefatos/artigo/main.tex" "logs/main.pdf" "main" 1723915669
-  "/etc/texmf/web2c/texmf.cnf" 1723914128 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/natalia/natalia/projetos_ufersa/srp_workspace/srp/artefatos/artigo/main.tex" 1723915669 2146 ad295b2b0b07c9fe500b684340eed6bb ""
+["pdflatex"] 1725206973 "/home/flavio/projetos/srp/artefatos/artigo/main.tex" "logs/main.pdf" "main" 1725206974
+  "/etc/texmf/web2c/texmf.cnf" 1723912154 475 c0e671620eb5563b2130f56340a5fde8 ""
+  "/home/flavio/projetos/srp/artefatos/artigo/main.tex" 1725206973 2144 996af163fec417de486d5cf1c206af3b ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -78,13 +78,13 @@
   "/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty" 1635798903 56029 3f7889dab51d620aa43177c391b7b190 ""
   "/usr/share/texlive/texmf-dist/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
-  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723914479 162899 515de6df2324cca4eba6407bef60e07c ""
-  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723914484 1436644 04492bdeecd1ffbadc497e495293d1f8 ""
-  "IEEEtran.cls" 1723910931 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "logs/main.aux" 1723915669 419 ad38690f608b6ee774e8f0ca2a0666aa "pdflatex"
-  "logs/main.bbl" 1723914506 242 c69af2bb485c5895f886ee9e1a83d0c1 "bibtex logs/main"
-  "main.tex" 1723915669 2146 ad295b2b0b07c9fe500b684340eed6bb ""
-  "sections/introduction.tex" 1723914101 300 e3cf74fbf63becffe0710e39914a9a71 ""
+  "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723912287 162899 515de6df2324cca4eba6407bef60e07c ""
+  "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723913299 1436577 2a07a970d51f0c6c40811b60a6f89195 ""
+  "IEEEtran.cls" 1724501062 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
+  "logs/main.aux" 1725206974 419 ad38690f608b6ee774e8f0ca2a0666aa "pdflatex"
+  "logs/main.bbl" 1725206973 242 c69af2bb485c5895f886ee9e1a83d0c1 "bibtex logs/main"
+  "main.tex" 1725206973 2144 996af163fec417de486d5cf1c206af3b ""
+  "sections/introducao.tex" 1724501062 300 e3cf74fbf63becffe0710e39914a9a71 ""
   (generated)
   "logs/main.aux"
   "logs/main.log"
