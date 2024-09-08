@@ -12,18 +12,42 @@ class EventoTest(TestCase):
 
     def test_create(self):
         """Testa a criação de um objeto."""
-        horario_agora = datetime.now()
+        horario_agora = datetime.now().date()
 
-        self.evento = Evento.objects.create(
+        evento = Evento.objects.create(
             nome="Evento 1",
             descricao="Descrição 1",
             data_inicial=horario_agora,
             data_final=horario_agora,
         )
-        self.evento.visitantes.add(self.visitante)
+        evento.visitantes.add(self.visitante)
 
-        self.assertEqual(self.evento.nome, "Evento 1")
-        self.assertEqual(self.evento.descricao, "Descrição 1")
-        self.assertEqual(self.evento.data_inicial, horario_agora)
-        self.assertEqual(self.evento.data_final, horario_agora)
-        self.assertEqual(self.evento.visitantes.first(), self.visitante)
+        self.assertEqual(evento.nome, "Evento 1")
+        self.assertEqual(evento.descricao, "Descrição 1")
+        self.assertEqual(evento.data_inicial, horario_agora)
+        self.assertEqual(evento.data_final, horario_agora)
+        self.assertEqual(evento.visitantes.first(), self.visitante)
+
+    def test_update(self):
+        """Testa a atualização de um objeto."""
+        horario_agora = datetime.now().date()
+
+        evento = Evento.objects.create(
+            nome="Evento 1",
+            descricao="Descrição 1",
+            data_inicial=horario_agora,
+            data_final=horario_agora,
+        )
+        evento.visitantes.add(self.visitante)
+
+        evento.nome = "Evento 2"
+        evento.descricao = "Descrição 2"
+        evento.data_inicial = horario_agora
+        evento.data_final = horario_agora
+        evento.save()
+
+        self.assertEqual(evento.nome, "Evento 2")
+        self.assertEqual(evento.descricao, "Descrição 2")
+        self.assertEqual(evento.data_inicial, horario_agora)
+        self.assertEqual(evento.data_final, horario_agora)
+        self.assertEqual(evento.visitantes.first(), self.visitante)
