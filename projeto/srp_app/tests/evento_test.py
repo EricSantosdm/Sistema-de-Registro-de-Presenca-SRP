@@ -14,16 +14,16 @@ class EventoTest(TestCase):
         """Testa a criação de um objeto."""
         horario_agora = datetime.now()
 
-        evento = Evento.objects.create(
+        self.evento = Evento.objects.create(
             nome="Evento 1",
             descricao="Descrição 1",
             data_inicial=horario_agora,
             data_final=horario_agora,
         )
-        evento.visitantes.add(self.visitante)
+        self.evento.visitantes.add(self.visitante)
 
-        self.assertEqual(evento.nome, "Evento 1")
-        self.assertEqual(evento.descricao, "Descrição 1")
-        self.assertEqual(evento.data_inicial, horario_agora)
-        self.assertEqual(evento.data_final, horario_agora)
-        self.assertEqual(evento.visitantes.first(), self.visitante)
+        self.assertEqual(self.evento.nome, "Evento 1")
+        self.assertEqual(self.evento.descricao, "Descrição 1")
+        self.assertEqual(self.evento.data_inicial, horario_agora)
+        self.assertEqual(self.evento.data_final, horario_agora)
+        self.assertEqual(self.evento.visitantes.first(), self.visitante)
