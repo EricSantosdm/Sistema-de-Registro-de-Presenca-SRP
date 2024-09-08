@@ -1,9 +1,7 @@
 from datetime import datetime
 
-import requests
-from django.contrib.auth import authenticate
 from django.contrib.auth.models import User
-from django.test import TestCase
+from django.test import Client, TestCase
 from srp_app.models import Evento, Visitante
 
 
@@ -21,13 +19,11 @@ class EventoTest(TestCase):
         }
         self.evento = Evento.objects.create(**evento_data)
 
-        usuario = User.objects.create_user(
+        self.client = Client()
+        self.usuario = User.objects.create_user(
             username="user1", password="senha123"
         )
-        self.usuario = authenticate(
-            username=usuario.username,
-            password=usuario.password,
-        )
+        self.client.login(username="user1", password="senha123")
 
     def test_create(self):
         """Testa a criação de um objeto."""
@@ -105,7 +101,7 @@ class EventoTest(TestCase):
         """Testa a inscrição de um usuário em um evento."""
 
         self.assertFalse(self.evento.usuario_atual_inscrito)
-        requests.post(
+        self.client.post(
             f"http://localhost:8000/srp_app/inscreverse/{self.evento.id}",
             timeout=2,
         )

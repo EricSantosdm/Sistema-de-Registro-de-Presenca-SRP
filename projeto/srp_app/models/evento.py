@@ -33,6 +33,8 @@ class Evento(AbstractNovadataModel):
     @property
     def usuario_atual_inscrito(self):
         """Informa se o usuário atual está inscrito no evento."""
+        print("User: ", get_current_user())
+
         return self.participanteevento_set.filter(
             usuario=get_current_user()
         ).exists()
