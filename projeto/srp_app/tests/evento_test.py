@@ -1,5 +1,8 @@
 from datetime import datetime
 
+import requests
+from django.contrib.auth import authenticate
+from django.contrib.auth.models import User
 from django.test import TestCase
 from srp_app.models import Evento, Visitante
 
@@ -9,6 +12,22 @@ class EventoTest(TestCase):
         """Faz os preparativos para os testes de eventos."""
         visitante_data = {"nome_completo": "Visitante 1"}
         self.visitante = Visitante.objects.create(**visitante_data)
+
+        evento_data = {
+            "nome": "Evento 1",
+            "descricao": "Descrição 1",
+            "data_inicial": datetime.now().date(),
+            "data_final": datetime.now().date(),
+        }
+        self.evento = Evento.objects.create(**evento_data)
+
+        usuario = User.objects.create_user(
+            username="user1", password="senha123"
+        )
+        self.usuario = authenticate(
+            username=usuario.username,
+            password=usuario.password,
+        )
 
     def test_create(self):
         """Testa a criação de um objeto."""
@@ -56,7 +75,7 @@ class EventoTest(TestCase):
         """Testa a exclusão de um objeto."""
         horario_agora = datetime.now().date()
 
-        self.assertEqual(Evento.objects.count(), 0)
+        self.assertEqual(Evento.objects.count(), 1)
 
         evento = Evento.objects.create(
             nome="Evento 1",
@@ -65,9 +84,9 @@ class EventoTest(TestCase):
             data_final=horario_agora,
         )
 
+        self.assertEqual(Evento.objects.count(), 2)
         evento.delete()
-
-        self.assertEqual(Evento.objects.count(), 0)
+        self.assertEqual(Evento.objects.count(), 1)
 
     def test_str(self):
         """Testa a representação de um objeto."""
@@ -81,3 +100,13 @@ class EventoTest(TestCase):
         )
 
         self.assertEqual(str(evento), "Evento 1")
+
+    def test_inscreverse(self):
+        """Testa a inscrição de um usuário em um evento."""
+
+        self.assertFalse(self.evento.usuario_atual_inscrito)
+        requests.post(
+            f"http://localhost:8000/srp_app/inscreverse/{self.evento.id}",
+            timeout=2,
+        )
+        self.assertTrue(self.evento.usuario_atual_inscrito)
