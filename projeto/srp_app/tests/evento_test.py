@@ -51,3 +51,20 @@ class EventoTest(TestCase):
         self.assertEqual(evento.data_inicial, horario_agora)
         self.assertEqual(evento.data_final, horario_agora)
         self.assertEqual(evento.visitantes.first(), self.visitante)
+
+    def test_delete(self):
+        """Testa a exclusão de um objeto."""
+        horario_agora = datetime.now().date()
+
+        self.assertEqual(Evento.objects.count(), 0)
+
+        evento = Evento.objects.create(
+            nome="Evento 1",
+            descricao="Descrição 1",
+            data_inicial=horario_agora,
+            data_final=horario_agora,
+        )
+
+        evento.delete()
+
+        self.assertEqual(Evento.objects.count(), 0)
