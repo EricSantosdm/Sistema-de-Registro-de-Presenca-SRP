@@ -68,3 +68,16 @@ class EventoTest(TestCase):
         evento.delete()
 
         self.assertEqual(Evento.objects.count(), 0)
+
+    def test_str(self):
+        """Testa a representação de um objeto."""
+        horario_agora = datetime.now().date()
+
+        evento = Evento.objects.create(
+            nome="Evento 1",
+            descricao="Descrição 1",
+            data_inicial=horario_agora,
+            data_final=horario_agora,
+        )
+
+        self.assertEqual(str(evento), "Evento 1")
