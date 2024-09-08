@@ -12,6 +12,7 @@ def inscreverse(request, id_evento):
     Regra 1: Se o usuário já for participante do evento, não faz nada.
     """
     evento = get_object_or_404(Evento, id=id_evento)
+    print("User: ", request.user)
 
     if evento.usuario_atual_inscrito:
         return reverse_lazy_plus(
