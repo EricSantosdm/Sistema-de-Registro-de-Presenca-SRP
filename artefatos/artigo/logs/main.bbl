@@ -18,6 +18,13 @@
 \newblock Paz e Terra, São Paulo, 2012.
 \newblock Tradução: Maria Tereza Lopes Teixeira, Marcos Penchel.
 
+\bibitem{jibble2024}
+{\sc Jibble}.
+\newblock Tipos de sistemas de controle de presença.
+\newblock
+  \url{https://www.jibble.io/pt-br/artigos/tipos-sistemas-controle-presenca}.
+\newblock Acesso em: 8 set. 2024.
+
 \bibitem{moraes2012}
 {\sc Moraes, C. C.~d., and Castrucci, P. d.~L.}
 \newblock {\em Engenharia de Automação Industrial}, 2~ed.
@@ -35,5 +42,11 @@
 \newblock {\em Revista Brasileira de Biblioteconomia e Documentação 15}, 2
   (2019), 410--426.
 \newblock Acesso em: 10 ago. 2023.
+
+\bibitem{ferreira2023}
+{\sc Sobrinho, L. A.~F.}
+\newblock Documentação para desenvolvimento de um sistema web para registro
+  de presença dos alunos do curso de ciência e tecnologia (c\&t), 2023.
+\newblock 45 f.
 
 \end{thebibliography}
