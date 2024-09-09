@@ -1,9 +1,40 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{bernardo2011}
+{\sc Bernardo, L.}
+\newblock Aprenda a usar o qr code.
+\newblock Veja São Paulo, 2011.
+\newblock Acesso em: 04 set. 2024.
+
+\bibitem{borges2010}
+{\sc Borges, L.~E.}
+\newblock {\em Python para desenvolvedores}, 2~ed.
+\newblock O'Reilly, Rio de Janeiro, 2010.
+
+\bibitem{cougo1997}
+{\sc Cougo, P.}
+\newblock {\em Modelagem Conceitual e projeto de banco de dados}.
+\newblock Elsevier, Rio de Janeiro, 1997.
 
 \bibitem{aurelio}
 {\sc Ferreira, A. B. d.~H., Ferreira, M.~B., and dos Anjos, M.}
 \newblock {\em Novo dicion{\'a}rio Aur{\'e}lio da l{\'\i}ngua portuguesa}.
 \newblock Editora Positivo, 2004.
+
+\bibitem{ferreira2023}
+{\sc Ferreira~Sobrinho, L.~A.}
+\newblock Documenta{\c{c}}{\~a}o para desenvolvimento de um sistema web para
+  registro de presen{\c{c}}a dos alunos do curso de ci{\^e}ncia e tecnologia
+  (c\&t).
+\newblock {B.S.} thesis, Universidade Federal do Rio Grande do Norte, Natal,
+  2023.
+\newblock 45 f.
+
+\bibitem{fowler2005}
+{\sc Fowler, M., Kobryn, C., Booch, G., Jacobson, I., and Rumbaugh, J.}
+\newblock {\em UML Essencial: Um breve guia para a linguagem-padrão de
+  modelagem de objetos}, 3~ed.
+\newblock Bookman, Porto Alegre, 2005.
 
 \bibitem{goncalves2000}
 {\sc Gonçalves, J. E.~L.}
@@ -12,23 +43,63 @@
   8--19.
 \newblock Acesso em: 10 ago. 2023.
 
+\bibitem{goncalves2014}
+{\sc Gonçalves, M.~C., and Cunha, T.~M.}
+\newblock Incentivo à leitura de obras literárias por meio do qr code.
+\newblock In {\em SEMINÁRIO NACIONAL DE BIBLIOTECAS UNIVERSITÁRIAS (SNBU)\/}
+  (2014), vol.~18.
+
 \bibitem{hobsbawn2012}
 {\sc Hobsbawn, E.}
 \newblock {\em A era das revoluções: 1789-1848}.
 \newblock Paz e Terra, São Paulo, 2012.
 \newblock Tradução: Maria Tereza Lopes Teixeira, Marcos Penchel.
 
-\bibitem{jibble2024}
-{\sc Jibble}.
-\newblock Tipos de sistemas de controle de presença.
+\bibitem{lutz2007}
+{\sc Lutz, M., and Ascher, D.}
+\newblock {\em Aprendendo Python}, 2~ed.
+\newblock Bookman, Porto Alegre, 2007.
+\newblock Tradução de João Tortello.
+
+\bibitem{martynowicz2018}
+{\sc Martynowicz, S.~M.}
+\newblock 9 benefícios da automação de processos na indústria.
 \newblock
-  \url{https://www.jibble.io/pt-br/artigos/tipos-sistemas-controle-presenca}.
-\newblock Acesso em: 8 set. 2024.
+  \url{https://itforum.com.br/9-beneficios-da-automacao-de-processos-na-industria/},
+  2018.
+\newblock Acesso em: 08 de agosto de 2024.
+
+\bibitem{meireles2010}
+{\sc Meireles, A.}
+\newblock {\em Desenvolvimento de uma aplicação web para gerenciamento de
+  reserva de recursos utilizando o Framework Django}.
+\newblock Tese de doutorado, Universidade Estadual do Piauí (UESPI) - Campus
+  Professor Alexandre Alves de Oliveira, Parnaíba, 2010.
 
 \bibitem{moraes2012}
 {\sc Moraes, C. C.~d., and Castrucci, P. d.~L.}
 \newblock {\em Engenharia de Automação Industrial}, 2~ed.
 \newblock S.A., Rio de Janeiro, 2012.
+
+\bibitem{okada2011}
+{\sc Okada, S.~I., and de~Souza, E. M.~S.}
+\newblock Estratégicas de marketing digital na era da busca.
+\newblock {\em Revista Brasileira de Marketing 10}, 1 (jan./abr. 2011), 46--72.
+
+\bibitem{qureshi2024}
+{\sc Qureshi, A.}
+\newblock Tipos de sistemas de controle de presença.
+\newblock
+  \url{https://www.jibble.io/pt-br/artigos/tipos-sistemas-controle-presenca}.
+\newblock Acesso em: 8 set. 2024.
+
+\bibitem{roig2017}
+{\sc Roig, M.}
+\newblock 7 benefícios da automação de processos.
+\newblock
+  \url{https://www.administradores.com.br/noticias/7-beneficios-da-automacao-de-processos},
+  2017.
+\newblock Acesso em: 08 de agosto de 2024.
 
 \bibitem{romera2023}
 {\sc Romera, G.~V., and Honorato, S.}
@@ -43,10 +114,24 @@
   (2019), 410--426.
 \newblock Acesso em: 10 ago. 2023.
 
-\bibitem{ferreira2023}
-{\sc Sobrinho, L. A.~F.}
-\newblock Documentação para desenvolvimento de um sistema web para registro
-  de presença dos alunos do curso de ciência e tecnologia (c\&t), 2023.
-\newblock 45 f.
+\bibitem{sommerville2011}
+{\sc Sommerville, I.}
+\newblock {\em Engenharia de Software}.
+\newblock Pearson Education do Brasil, 2011.
+\newblock Acesso em: 04 set. 2024.
+
+\bibitem{valente2020}
+{\sc Valente, M.~T.}
+\newblock {\em Engenharia de software moderna: Princípios e Práticas para
+  Desenvolvimento de Software com Produtividade}.
+\newblock Independente, [S. l.], 2020.
+\newblock Acesso em: 04 set. 2024.
+
+\bibitem{vechiato2019}
+{\sc Vechiato, F.~L., Vidotti, S. A. B.~G., Coneglian, C.~S., Roa-Martinez,
+  S.~M., and Santar{\'e}m~Segundo, J.~E.}
+\newblock Web, web sem{\^a}ntica e web pragm{\'a}tica: um posicionamento da
+  arquitetura da informa{\c{c}}{\~a}o.
+\newblock {\em Informa{\c{c}}{\~a}o \& Sociedade-Estudos\/} (2019).
 
 \end{thebibliography}
