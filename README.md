@@ -80,7 +80,9 @@ O Sistema de Registro de Presença (SRP) é uma aplicação desenvolvida para fa
 
 - **Alysson Milanez** - Orientador
 - **Bruno**
+- **Daniel**
 - **Dimona**
+- **Emanuela**
 - **Eric**
 - **Flavio**
 - **Natalia**
