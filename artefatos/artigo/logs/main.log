@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.17)  1 SEP 2024 13:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.17)  9 SEP 2024 20:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/flavio/projetos/srp/artefatos/artigo/main.tex
-(/home/flavio/projetos/srp/artefatos/artigo/main.tex
+**/home/natalia/natalia/projetos_ufersa/srp_workspace/srp/artefatos/artigo/main.tex
+(/home/natalia/natalia/projetos_ufersa/srp_workspace/srp/artefatos/artigo/main.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (./IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
@@ -119,7 +119,7 @@ Package: babel 2022/01/26 3.70 The Babel package
  (/usr/share/texlive/texmf-dist/tex/generic/babel-portuges/brazil.ldf
 Language: portuges 2021/07/09 v1.2t Portuguese support from the babel system
 Package babel Info: Hyphen rules for 'brazil' set to \l@portuguese
-(babel)             (\language3). Reported on input line 111.
+(babel)             (\language5). Reported on input line 111.
 Package babel Info: Making " an active character on input line 143.
 )) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
@@ -286,10 +286,40 @@ File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 LaTeX Font Info:    Trying to load font information for U+msb on input line 61.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (./sections/1-introducao.tex) (./sections/2-fundamentacao_teorica.tex) (./sections/3-abordagem.tex) (./sections/4-consideracoes_finais_trabalhos_futuros.tex) (logs/main.bbl [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+) (./sections/1-introducao.tex) (./sections/2-fundamentacao_teorica.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
+ \OT1/ptm/m/it/10 2) Ar-qui-te-tura Cli-ente/Servidor: [][] \OT1/ptm/m/n/10 A ar-qui-te-tura
+ []
+
+[2] [3]) (./sections/3-abordagem.tex) (./sections/4-consideracoes_finais_trabalhos_futuros.tex) (logs/main.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 65--71
+[]\OT1/ptm/m/sc/8 Martynowicz, S. M.  \OT1/ptm/m/n/8 9 be-nef[]^^Pcios da automa[][]ao
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 65--71
+\OT1/ptm/m/n/8 de pro-ces-sos na ind[]ustria.  $https : / / itforum . com . br /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--103
+[]\OT1/ptm/m/sc/8 Roig, M.  \OT1/ptm/m/n/8 7 be-nef[]^^Pcios da automa[][]ao de pro-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 97--103
+\OT1/ptm/m/n/8 ces-sos.  $https : / / www . administradores . com . br / noticias /
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 97--103
+\OT1/ptm/m/n/8 7-[]bene^^Lcios-[]da-[]automacao-[]de-[]processos$, 2017.  Acesso em: 08
+ []
+
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -301,22 +331,20 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2
-
-] (logs/main.aux) ) 
+[4] (logs/main.aux) ) 
 Here is how much of TeX's memory you used:
- 5245 strings out of 480154
- 83614 string characters out of 5893788
- 409243 words of memory out of 5000000
- 23135 multiletter control sequences out of 15000+600000
- 505233 words of font info for 94 fonts, out of 8000000 for 9000
+ 5277 strings out of 480154
+ 84071 string characters out of 5893788
+ 412300 words of memory out of 5000000
+ 23162 multiletter control sequences out of 15000+600000
+ 508937 words of font info for 106 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
- 55i,8n,62p,1092b,268s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on logs/main.pdf (2 pages, 69501 bytes).
+ 55i,8n,62p,1122b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on logs/main.pdf (4 pages, 102424 bytes).
 PDF statistics:
- 37 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
+ 48 PDF objects out of 1000 (max. 8388607)
+ 29 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
