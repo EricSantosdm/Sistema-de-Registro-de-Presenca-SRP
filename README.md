@@ -13,6 +13,10 @@ O Sistema de Registro de Presença (SRP) é uma aplicação desenvolvida para fa
 - Interface amigável e fácil de usar
 - Notificações e alertas de presença
 
+## Artigo
+
+Confira o artigo científico do projeto [aqui](artefatos/artigo/logs/main.pdf).
+
 ## Tecnologias Utilizadas
 
 - **Frontend:** HTML, CSS, JavaScript
