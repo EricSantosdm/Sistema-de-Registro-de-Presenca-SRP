@@ -1,4 +1,5 @@
 from .evento import (
+    GerarQrCodeView,
     JaInscritoView,
     SucessoInscricaoView,
     inscreverse,
@@ -6,6 +7,7 @@ from .evento import (
 )
 
 __all__ = [
+    GerarQrCodeView,
     inscreverse,
     JaInscritoView,
     marcar_presenca,

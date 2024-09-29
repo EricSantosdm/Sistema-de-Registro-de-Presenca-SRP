@@ -4,6 +4,11 @@ from . import views
 
 urlpatterns = [
     path(
+        "qrcode/<int:pk>/",
+        views.GerarQrCodeView.as_view(),
+        name="gerar_qrcode",
+    ),
+    path(
         "inscreverse/<int:id_evento>/",
         views.inscreverse,
         name="inscreverse",
