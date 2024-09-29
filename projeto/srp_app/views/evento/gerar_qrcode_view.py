@@ -38,6 +38,20 @@ class GerarQrCodeView(
 
         return path
 
+    def get_title(self):
+        """Retorna o título do QRCode."""
+        acao = self.request.GET.get("acao")
+        evento = self.get_object()
+
+        if acao == "inscreverse":
+            title = f"Inscrição no evento {evento}"
+        elif acao == "marcar_presenca":
+            title = f"Presença no evento {evento}"
+        else:
+            raise ValueError("Ação inválida.")
+
+        return title
+
     def get_context_data(self, **kwargs: Any) -> dict[str, Any]:
         """Retorna o contexto da view."""
         context = super().get_context_data(**kwargs)
@@ -47,4 +61,6 @@ class GerarQrCodeView(
         rota = f"{host}{path}"
 
         context["rota"] = rota
+        context["title"] = self.get_title()
+
         return context
