@@ -13,11 +13,11 @@ class EventoAdmin(NovadataModelAdmin):
     ]
 
     change_actions = [
-        "gerar_qrcode_inscreverse",
+        "gerar_qrcode_inscricao",
         # "gerar_qrcode_marcar_presenca",
     ]
 
-    def gerar_qrcode_inscreverse(self, request, obj):
+    def gerar_qrcode_inscricao(self, request, obj):
         """Redireciona para a view de gerar QRCode."""
         return reverse_lazy_plus(
             "gerar_qrcode",
