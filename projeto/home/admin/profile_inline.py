@@ -1,9 +1,10 @@
 from django.contrib import admin
+from unfold.admin import TabularInline
 
 from ..models import Profile
 
 
-class ProfileInline(admin.StackedInline):
+class ProfileInline(TabularInline, admin.StackedInline):
     model = Profile
 
     extra = 0
@@ -13,3 +14,8 @@ class ProfileInline(admin.StackedInline):
     can_delete = False
 
     fk_name = "usuario"
+
+    exclude = [
+        "usuario_criacao",
+        "usuario_atualizacao",
+    ]

@@ -1,13 +1,14 @@
 from django.contrib import admin
 from novadata_utils.admin import NovadataModelAdmin
 from novadata_utils.redirect import reverse_lazy_plus
+from unfold.admin import ModelAdminMixin
 
 from ..models import Evento
 from .participante_evento_inline import ParticipanteEventoInline
 
 
 @admin.register(Evento)
-class EventoAdmin(NovadataModelAdmin):
+class EventoAdmin(ModelAdminMixin, NovadataModelAdmin):
     inlines = [
         ParticipanteEventoInline,
     ]

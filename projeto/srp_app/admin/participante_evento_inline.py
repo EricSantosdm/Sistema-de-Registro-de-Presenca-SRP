@@ -1,9 +1,10 @@
 from django.contrib import admin
+from unfold.admin import TabularInline
 
 from ..models import ParticipanteEvento
 
 
-class ParticipanteEventoInline(admin.TabularInline):
+class ParticipanteEventoInline(TabularInline, admin.TabularInline):
     model = ParticipanteEvento
 
     extra = 0
