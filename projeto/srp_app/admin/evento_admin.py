@@ -2,7 +2,7 @@ from django.contrib import admin
 from novadata_utils.admin import NovadataModelAdmin
 from novadata_utils.redirect import reverse_lazy_plus
 from unfold.admin import ModelAdminMixin
-from unfold.contrib.filters.admin import RangeDateFilter, RangeDateTimeFilter
+from unfold.decorators import action
 
 from ..models import Evento
 from .participante_evento_inline import ParticipanteEventoInline
@@ -19,6 +19,7 @@ class EventoAdmin(ModelAdminMixin, NovadataModelAdmin):
         "gerar_qrcode_presenca",
     ]
 
+    @action(attrs={"target": "_blank"})
     def gerar_qrcode_inscricao(self, request, obj):
         """Redireciona para a view de gerar QRCode."""
         return reverse_lazy_plus(
@@ -29,6 +30,7 @@ class EventoAdmin(ModelAdminMixin, NovadataModelAdmin):
             },
         )
 
+    @action(attrs={"target": "_blank"})
     def gerar_qrcode_presenca(self, request, obj):
         """Redireciona para a view de gerar QRCode."""
         return reverse_lazy_plus(
