@@ -17,3 +17,5 @@ class ParticipanteEventoInline(TabularInline, admin.TabularInline):
         "usuario_criacao",
         "usuario_atualizacao",
     ]
+
+    tab = True

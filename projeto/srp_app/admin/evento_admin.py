@@ -2,6 +2,7 @@ from django.contrib import admin
 from novadata_utils.admin import NovadataModelAdmin
 from novadata_utils.redirect import reverse_lazy_plus
 from unfold.admin import ModelAdminMixin
+from unfold.contrib.filters.admin import RangeDateFilter, RangeDateTimeFilter
 
 from ..models import Evento
 from .participante_evento_inline import ParticipanteEventoInline
