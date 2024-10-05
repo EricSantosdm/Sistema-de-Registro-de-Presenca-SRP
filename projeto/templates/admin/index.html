@@ -1,0 +1,8 @@
+{% extends "admin/index.html" %}
+{% load unfold %}
+
+{% block content %}
+	{% component "unfold/components/card.html" with title="Meus eventos" %}
+		{% component "unfold/components/table.html" %} {% endcomponent %}
+	{% endcomponent %}
+{% endblock %}

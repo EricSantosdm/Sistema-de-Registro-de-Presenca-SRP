@@ -22,6 +22,7 @@ django-full-crud==0.3
 django-import-export==4.1.1
 django-object-actions==4.2.0
 django-qr-code==4.1.0
+django-unfold==0.39.0
 django-weasyprint==2.3.0
 django-widget-tweaks==1.5.0
 djangorestframework==3.14.0
@@ -42,6 +43,7 @@ novadata-utils==0.3.7
 odfpy==1.4.1
 openpyxl==3.1.5
 pillow==10.4.0
+psycopg2-binary==2.9.9
 pycparser==2.22
 pydantic==2.8.2
 pydantic_core==2.20.1

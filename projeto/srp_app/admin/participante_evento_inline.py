@@ -1,9 +1,10 @@
 from django.contrib import admin
+from unfold.admin import TabularInline
 
 from ..models import ParticipanteEvento
 
 
-class ParticipanteEventoInline(admin.TabularInline):
+class ParticipanteEventoInline(TabularInline, admin.TabularInline):
     model = ParticipanteEvento
 
     extra = 0
@@ -16,3 +17,5 @@ class ParticipanteEventoInline(admin.TabularInline):
         "usuario_criacao",
         "usuario_atualizacao",
     ]
+
+    tab = True

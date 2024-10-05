@@ -20,6 +20,13 @@ INTERNAL_IPS = [
 ]
 
 INSTALLED_APPS = [
+    "unfold",
+    "unfold.contrib.filters",
+    "unfold.contrib.forms",
+    "unfold.contrib.inlines",
+    "unfold.contrib.import_export",
+    "unfold.contrib.guardian",
+    "unfold.contrib.simple_history",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -120,14 +127,27 @@ else:
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-default_dburl = "sqlite:///" + os.path.join(BASE_DIR, "db.sqlite3")
-DATABASES = {
-    "default": config(
-        "DATABASE_URL",
-        default=default_dburl,
-        cast=dburl,
-    )
-}
+PRODUCAO = config("PRODUCAO", default=False, cast=bool)
+if PRODUCAO:
+    DATABASES = {
+        "default": {
+            "ENGINE": "django.db.backends.postgresql_psycopg2",
+            "NAME": "postgres",
+            "USER": "postgres",
+            "PASSWORD": "passwordsrp2024",
+            "HOST": "database-srp.cezmcekhri9w.us-east-1.rds.amazonaws.com",
+            "PORT": "5432",
+        }
+    }
+else:
+    default_dburl = "sqlite:///" + os.path.join(BASE_DIR, "db.sqlite3")
+    DATABASES = {
+        "default": config(
+            "DATABASE_URL",
+            default=default_dburl,
+            cast=dburl,
+        )
+    }
 
 REST_FRAMEWORK = {
     # "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated"),  # noqa E501
