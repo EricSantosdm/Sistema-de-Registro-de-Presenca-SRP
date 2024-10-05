@@ -97,6 +97,8 @@ TEMPLATES = [
     },
 ]
 
+PRODUCAO = config("PRODUCAO", default=False, cast=bool)
+
 WSGI_APPLICATION = "srp.wsgi.application"
 
 USE_AWS = config("USE_AWS", default=False, cast=bool)
@@ -122,13 +124,19 @@ if USE_AWS:
         PUBLIC_MEDIA_LOCATION,
     )
     DEFAULT_FILE_STORAGE = "srp.storage_backends.PublicMediaStorage"
+elif PRODUCAO:
+    STATIC_URL = "/static/"
+    MEDIA_URL = "/media/"
+
+    STATIC_ROOT = os.path.join("/var/www/html/static")
+    MEDIA_ROOT = os.path.join("/var/www/html/media")
 else:
     STATIC_URL = "/static/"
     MEDIA_URL = "/media/"
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
-MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 
-PRODUCAO = config("PRODUCAO", default=False, cast=bool)
+    STATIC_ROOT = os.path.join(BASE_DIR, "static")
+    MEDIA_ROOT = os.path.join(BASE_DIR, "media")
+
 if PRODUCAO:
     DATABASES = {
         "default": {
