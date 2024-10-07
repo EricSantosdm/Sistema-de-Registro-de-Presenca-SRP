@@ -76,3 +76,4 @@ urlpatterns = (
 admin.site.site_header = "Sistema de registro de presença"
 admin.site.index_title = "Tela inicial"
 admin.site.site_title = "SRP"
+admin.site.site_url = None
