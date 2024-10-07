@@ -237,4 +237,7 @@ UNFOLD = {
             "href": lambda request: static("srp_app/srp_logo.png"),
         },
     ],
+    "SCRIPTS": [
+        lambda request: static("srp_app/changeLoginMessage.js"),
+    ],
 }
