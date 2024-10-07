@@ -19,7 +19,7 @@ django-crum==0.7.9
 django-debug-toolbar==4.2.0
 django-filter==23.3
 django-full-crud==0.3
-django-import-export==4.1.1
+django-import-export==3.3.1
 django-object-actions==4.2.0
 django-qr-code==4.1.0
 django-unfold==0.39.0
