@@ -3,6 +3,7 @@ from pathlib import Path
 
 from decouple import config
 from dj_database_url import parse as dburl
+from django.templatetags.static import static
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -223,3 +224,17 @@ EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD", "")
 DEFAULT_FROM_EMAIL = "srp <example@email.com.br>"
 
 CLEAR_CACHE_ON_RESTART = True
+UNFOLD = {
+    "SITE_ICON": {
+        "light": lambda request: static("srp_app/srp_logo.png"),
+        "dark": lambda request: static("srp_app/srp_logo.png"),
+    },
+    "SITE_FAVICONS": [
+        {
+            "rel": "icon",
+            "sizes": "32x32",
+            "type": "image/svg+xml",
+            "href": lambda request: static("srp_app/srp_logo.png"),
+        },
+    ],
+}
