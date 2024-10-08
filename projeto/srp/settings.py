@@ -14,7 +14,7 @@ DEBUG = config("DEBUG", default=False, cast=bool)
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "ec2-184-73-104-203.compute-1.amazonaws.com",
+    "ec2-3-84-152-70.compute-1.amazonaws.com",
 ]
 
 INTERNAL_IPS = [
