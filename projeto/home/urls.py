@@ -1,7 +1,6 @@
 from django.urls import path
-
-from . import views
+from django.views.generic.base import RedirectView
 
 urlpatterns = [
-    path("", views.HomeView.as_view(), name="home"),
+    path("", RedirectView.as_view(url="/admin"), name="home"),
 ]
