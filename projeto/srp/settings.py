@@ -15,6 +15,8 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "ec2-3-84-152-70.compute-1.amazonaws.com",
+    "registrodepresenca.srp.ufersa.dev.br",
+    "srp.ufersa.dev.br",
 ]
 
 INTERNAL_IPS = [
