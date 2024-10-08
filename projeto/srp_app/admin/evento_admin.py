@@ -1,5 +1,6 @@
 from django.contrib import admin
 from django.urls import path
+from django.utils.html import format_html
 from django.views.generic import DetailView
 from novadata_utils.admin import NovadataModelAdmin
 from novadata_utils.redirect import reverse_lazy_plus
@@ -32,7 +33,8 @@ class EventoAdmin(ModelAdminMixin, NovadataModelAdmin):
         "gerar_qrcode_presenca",
     ]
 
-    # list_display = ["detail"]
+    def get_list_display(self, request):
+        return super().get_list_display(request) + ["participantes"]
 
     @action(attrs={"target": "_blank"})
     def gerar_qrcode_inscricao(self, request, obj):
@@ -70,9 +72,16 @@ class EventoAdmin(ModelAdminMixin, NovadataModelAdmin):
             *super().get_urls(),
         ]
 
-    def detail(self, obj: Evento) -> str:
-        return reverse_lazy_plus(
-            "admin:srp_app_evento_inscreverse",
-            url_params=[obj.pk],
+    def participantes(self, obj: Evento) -> str:
+        """Redireciona para os participantes desse evento."""
+        link = reverse_lazy_plus(
+            "admin:srp_app_participanteevento_changelist",
+            get_params={
+                "evento__id__exact": obj.pk,
+            },
             just_uri=True,
+        )
+
+        return format_html(
+            f'<a href="{link}" target="_blank">Participantes</a>'
         )

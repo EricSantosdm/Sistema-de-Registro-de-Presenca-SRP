@@ -3,6 +3,7 @@ from pathlib import Path
 
 from decouple import config
 from dj_database_url import parse as dburl
+from django.templatetags.static import static
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -13,7 +14,7 @@ DEBUG = config("DEBUG", default=False, cast=bool)
 ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
-    "ec2-184-73-104-203.compute-1.amazonaws.com",
+    "ec2-3-84-152-70.compute-1.amazonaws.com",
 ]
 
 INTERNAL_IPS = [
@@ -210,9 +211,9 @@ USE_TZ = True
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-LOGIN_REDIRECT_URL = "home"
-LOGOUT_REDIRECT_URL = "login"
-LOGIN_URL = "login"
+LOGIN_REDIRECT_URL = "admin:index"
+LOGOUT_REDIRECT_URL = "admin:login"
+LOGIN_URL = "admin:login"
 
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_USE_TLS = True
@@ -223,3 +224,20 @@ EMAIL_HOST_PASSWORD = config("EMAIL_HOST_PASSWORD", "")
 DEFAULT_FROM_EMAIL = "srp <example@email.com.br>"
 
 CLEAR_CACHE_ON_RESTART = True
+UNFOLD = {
+    "SITE_ICON": {
+        "light": lambda request: static("srp_app/srp_logo.png"),
+        "dark": lambda request: static("srp_app/srp_logo.png"),
+    },
+    "SITE_FAVICONS": [
+        {
+            "rel": "icon",
+            "sizes": "32x32",
+            "type": "image/svg+xml",
+            "href": lambda request: static("srp_app/srp_logo.png"),
+        },
+    ],
+    "SCRIPTS": [
+        lambda request: static("srp_app/changeLoginMessage.js"),
+    ],
+}
