@@ -1,7 +1,14 @@
 from django import template
 from django.conf import settings
+from srp_app.models import Evento
 
 register = template.Library()
+
+
+@register.simple_tag()
+def eventos():
+    """Retorna os eventos."""
+    return Evento.objects.all()
 
 
 @register.simple_tag()

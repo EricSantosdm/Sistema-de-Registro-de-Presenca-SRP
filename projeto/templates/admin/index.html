@@ -1,6 +1,7 @@
 {% extends "admin/index.html" %}
 {% load unfold %}
 {% load static %}
+{% load home_tags %}
 
 {% block extrahead %}
 <script src="https://cdn.tailwindcss.com"></script>
@@ -15,6 +16,8 @@
 {% endblock %}
 
 {% block content %}
+{% eventos as eventos %}
+
 <div class="flex flex-col items-center gap-8 2xl:flex-row">
 	<img class="w-56 h-auto lg:w-72" src="{% static 'srp_app/logo-borda.png' %}" alt="logo">
 
@@ -34,110 +37,30 @@
 		</span>
 	</blockquote>
 	<div class="swiper-wrapper">
-	  <div class="swiper-slide">
-			<div
-				class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
-				<div class="min-h-[256px]">
-					<img src="https://readymadeui.com/Imagination.webp" class="w-full" />
-				</div>
-
-				<div class="p-6">
-					<h3 class="text-gray-800 text-xl font-bold">Heading</h3>
-					<p class="mt-4 text-sm text-gray-500 leading-relaxed">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu,
-						at fermentum dui. Maecenas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu,
-						at fermentum dui. Maecenas.
-					</p>
-					<button 
-						data-modal-target="default-modal" 
-						data-modal-toggle="default-modal" 
-						type="button" 
-						class="mt-6 px-5 py-2.5 rounded-lg text-white text-sm tracking-wider border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">
-						View
-					</button>
-				</div>
+		{% for evento in eventos %}
+			<div class="swiper-slide">
+			  <div
+				  class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
+				  <div class="min-h-[256px]">
+					  <img src="https://readymadeui.com/Imagination.webp" class="w-full" />
+				  </div>
+  
+				  <div class="p-6">
+					  <h3 class="text-gray-800 text-xl font-bold">{{ evento.nome }}</h3>
+					  <p class="mt-4 text-sm text-gray-500 leading-relaxed">
+						  {{ evento.descricao }}
+					  </p>
+					  <button 
+						  data-modal-target="modal-evento-{{evento.id}}" 
+						  data-modal-toggle="modal-evento-{{evento.id}}" 
+						  type="button" 
+						  class="mt-6 px-5 py-2.5 rounded-lg text-white text-sm tracking-wider border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">
+						  Detalhes
+					  </button>
+				  </div>
+			  </div>
 			</div>
-	  	</div>
-		<div class="swiper-slide">
-				<div
-					class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
-					<div class="min-h-[256px]">
-						<img src="https://readymadeui.com/Imagination.webp" class="w-full" />
-					</div>
-
-					<div class="p-6">
-						<h3 class="text-gray-800 text-xl font-bold">Heading</h3>
-						<p class="mt-4 text-sm text-gray-500 leading-relaxed">
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu,
-							at fermentum dui. Maecenas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu,
-							at fermentum dui. Maecenas.
-						</p>
-						<button type="button" class="mt-6 px-5 py-2.5 rounded-lg text-white text-sm tracking-wider border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">
-							View
-						</button>
-					</div>
-				</div>
-		</div>
-	  	<div class="swiper-slide">
-			<div
-				class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
-				<div class="min-h-[256px]">
-					<img src="https://readymadeui.com/Imagination.webp" class="w-full" />
-				</div>
-
-				<div class="p-6">
-					<h3 class="text-gray-800 text-xl font-bold">Heading</h3>
-					<p class="mt-4 text-sm text-gray-500 leading-relaxed">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu,
-						at fermentum dui. Maecenas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu,
-						at fermentum dui. Maecenas.
-					</p>
-					<button type="button" class="mt-6 px-5 py-2.5 rounded-lg text-white text-sm tracking-wider border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">
-						View
-					</button>
-				</div>
-			</div>
-		</div>
-		<div class="swiper-slide">
-			<div
-				class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
-				<div class="min-h-[256px]">
-					<img src="https://readymadeui.com/Imagination.webp" class="w-full" />
-				</div>
-
-				<div class="p-6">
-					<h3 class="text-gray-800 text-xl font-bold">Heading</h3>
-					<p class="mt-4 text-sm text-gray-500 leading-relaxed">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu,
-						at fermentum dui. Maecenas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu,
-						at fermentum dui. Maecenas.
-					</p>
-					<button type="button" class="mt-6 px-5 py-2.5 rounded-lg text-white text-sm tracking-wider border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">
-						View
-					</button>
-				</div>
-			</div>
-	  	</div>
-		<div class="swiper-slide">
-			<div
-				class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
-				<div class="min-h-[256px]">
-					<img src="https://readymadeui.com/Imagination.webp" class="w-full" />
-				</div>
-
-				<div class="p-6">
-					<h3 class="text-gray-800 text-xl font-bold">Heading</h3>
-					<p class="mt-4 text-sm text-gray-500 leading-relaxed">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu,
-						at fermentum dui. Maecenas Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor auctor arcu,
-						at fermentum dui. Maecenas.
-					</p>
-					<button type="button" class="mt-6 px-5 py-2.5 rounded-lg text-white text-sm tracking-wider border-none outline-none bg-blue-600 hover:bg-blue-700 active:bg-blue-600">
-						View
-					</button>
-				</div>
-			</div>
-		</div>
+		{% endfor %}
 	</div>
   
 	<!-- If we need navigation buttons -->
@@ -145,31 +68,42 @@
 	<div class="swiper-button-next  w-10 h-10 rounded-full bg-gray-700 text-white"></div>
 </div>
 
-<div id="default-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+{% for evento in eventos %}
+<div id="modal-evento-{{evento.id}}" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
     <div class="relative p-4 w-full max-w-2xl max-h-full">
         <!-- Modal content -->
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
             <!-- Modal header -->
             <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
                 <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
-                    Terms of Service
+                    Detalhes do evento "{{ evento.nome }}"
                 </h3>
-                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="default-modal">
+                <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-evento-{{evento.id}}">
                     <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
                     </svg>
-                    <span class="sr-only">Close modal</span>
                 </button>
             </div>
             <!-- Modal body -->
             <div class="p-4 md:p-5 space-y-4">
                 <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
-                    With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply.
+                    Descrição: {{ evento.descricao }}
+                </p>
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    Quantidade de inscritos: {{ evento.participanteevento_set.all.count }}
+                </p>
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    Data inicial: {{ evento.data_inicial }}
+                </p>
+                <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+                    Data final: {{ evento.data_final }}
                 </p>
             </div>
         </div>
     </div>
 </div>
+{% endfor %}
+
 
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
