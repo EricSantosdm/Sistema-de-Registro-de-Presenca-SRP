@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     # Apps
-    "front_assets",
     "home",
     "srp_app",
     # Libs
