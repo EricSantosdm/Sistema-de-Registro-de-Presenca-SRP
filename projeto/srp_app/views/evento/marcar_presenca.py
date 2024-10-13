@@ -33,6 +33,6 @@ def marcar_presenca(request, id_evento):
         )
 
     return reverse_lazy_plus(
-        "sucesso_inscricao",
+        "sucesso_presenca",
         url_params=[evento.id],
     )
