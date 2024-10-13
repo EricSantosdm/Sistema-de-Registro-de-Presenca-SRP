@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block content %}
-<section class="grid place-items-center">
+<section class="grid place-items-center max-w-[35rem] mx-auto">
 	<div id="lottie-animation" style="width: 400px; height: 400px;"></div>
 
 	<div class="-mt-12 flex flex-col gap-8">
@@ -15,7 +15,9 @@
 			<li>Início: {{ object.data_inicial }}</li>
 			<li>Fim: {{ object.data_final }}</li>
 		</ul>
-		<a href="{% url 'admin:index' %}" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-center font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+		<a 
+			href="{% url 'admin:index' %}" 
+			class="rounded-md bg-[#35A28D] px-3.5 py-2.5 text-sm text-center font-semibold text-white shadow-sm">
 			Voltar para o início
 		</a>
 	</div>
