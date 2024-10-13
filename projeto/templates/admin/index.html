@@ -42,7 +42,11 @@
 			  <div
 				  class="bg-white shadow-[0_4px_12px_-5px_rgba(0,0,0,0.4)] w-full max-w-sm rounded-lg overflow-hidden mx-auto font-[sans-serif] mt-4">
 				  <div class="min-h-[256px]">
-					  <img src="https://readymadeui.com/Imagination.webp" class="w-full" />
+						{% if evento.capa %}
+							<img src="{{ evento.capa.url }}" class="w-full" />
+						{% else %}
+							<img src="https://placehold.co/600x400" class="w-full" />
+						{% endif %}
 				  </div>
   
 				  <div class="p-6">
