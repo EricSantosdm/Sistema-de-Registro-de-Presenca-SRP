@@ -6,7 +6,7 @@ from ..models import ParticipanteEvento
 
 
 @admin.register(ParticipanteEvento)
-class ParticipanteEventoAdmin(ModelAdmin, NovadataModelAdmin):
+class ParticipanteEventoAdmin(NovadataModelAdmin, ModelAdmin):
     extra = 0
 
     autocomplete_fields = [
