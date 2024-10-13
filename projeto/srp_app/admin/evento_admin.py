@@ -4,7 +4,7 @@ from django.utils.html import format_html
 from django.views.generic import DetailView
 from novadata_utils.admin import NovadataModelAdmin
 from novadata_utils.redirect import reverse_lazy_plus
-from unfold.admin import ModelAdminMixin
+from unfold.admin import ModelAdmin
 from unfold.decorators import action
 from unfold.views import UnfoldModelAdminViewMixin
 
@@ -23,7 +23,7 @@ class InscreverseEventoView(UnfoldModelAdminViewMixin, DetailView):
 
 
 @admin.register(Evento)
-class EventoAdmin(ModelAdminMixin, NovadataModelAdmin):
+class EventoAdmin(NovadataModelAdmin, ModelAdmin):
     inlines = [
         ParticipanteEventoInline,
     ]
