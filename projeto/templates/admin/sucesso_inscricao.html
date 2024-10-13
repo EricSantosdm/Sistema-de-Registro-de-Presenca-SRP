@@ -2,17 +2,24 @@
 {% load static %}
 
 {% block content %}
-<div id="lottie-animation" style="width: 500px; height: 500px;"></div>
+<section class="grid place-items-center">
+	<div id="lottie-animation" style="width: 400px; height: 400px;"></div>
 
-<h1>Sucesso na inscrição</h1>
-<p>Você se increveu no evento {{ object.nome }}.</p>
-<p>Dados do evento:</p>
-<ul>
-	<li>Nome: {{ object.nome }}</li>
-	<li>Descricao: {{ object.descricao }}</li>
-	<li>Início: {{ object.data_inicial }}</li>
-	<li>Fim: {{ object.data_final }}</li>
-</ul>
+	<div class="-mt-12 flex flex-col gap-8">
+		<h1 class="text-3xl font-bold tracking-tight text-gray-400 sm:text-5xl">Sucesso na inscrição</h1>
+		<p class="text-2xl leading-7 text-gray-600">Você se increveu no evento {{ object.nome }}.</p>
+		<ul class="text-base">
+			<p class="text-start">Dados do evento:</p>
+			<li>Nome: {{ object.nome }}</li>
+			<li>Descricao: {{ object.descricao }}</li>
+			<li>Início: {{ object.data_inicial }}</li>
+			<li>Fim: {{ object.data_final }}</li>
+		</ul>
+		<a href="{% url 'admin:index' %}" class="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm text-center font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+			Voltar para o início
+		</a>
+	</div>
+</section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
 <script>
@@ -21,7 +28,7 @@
 		renderer: 'svg',
 		loop: true,
 		autoplay: true,
-		path: "{% static 'srp_app/success.json' %}" // Substitua pelo caminho real do arquivo JSON
+		path: "{% static 'srp_app/success.json' %}"
 	});
 </script>
 {% endblock %}
