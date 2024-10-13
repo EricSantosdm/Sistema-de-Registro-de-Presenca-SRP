@@ -19,11 +19,11 @@ urlpatterns = (
             admin.site.urls,
         ),
         path(
-            "",
+            "home/",
             include("home.urls"),
         ),
         path(
-            "srp_app/",
+            "",
             include("srp_app.urls"),
         ),
         # Regsitragion urls

@@ -1,0 +1,27 @@
+{% extends "admin/index.html" %}
+{% load static %}
+
+{% block content %}
+<div id="lottie-animation" style="width: 500px; height: 500px;"></div>
+
+<h1>Sucesso na inscrição</h1>
+<p>Você se increveu no evento {{ object.nome }}.</p>
+<p>Dados do evento:</p>
+<ul>
+	<li>Nome: {{ object.nome }}</li>
+	<li>Descricao: {{ object.descricao }}</li>
+	<li>Início: {{ object.data_inicial }}</li>
+	<li>Fim: {{ object.data_final }}</li>
+</ul>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
+<script>
+	const animation = lottie.loadAnimation({
+		container: document.getElementById('lottie-animation'),
+		renderer: 'svg',
+		loop: true,
+		autoplay: true,
+		path: "{% static 'srp_app/success.json' %}" // Substitua pelo caminho real do arquivo JSON
+	});
+</script>
+{% endblock %}
