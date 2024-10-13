@@ -28,4 +28,9 @@ urlpatterns = [
         views.SucessoInscricaoView.as_view(),
         name="sucesso_inscricao",
     ),
+    path(
+        "sucesso_presenca/<int:pk>/",
+        views.SucessoPresencaView.as_view(),
+        name="sucesso_presenca",
+    ),
 ]
