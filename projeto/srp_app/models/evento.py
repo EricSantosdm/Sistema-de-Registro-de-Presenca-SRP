@@ -11,6 +11,13 @@ class Evento(AbstractNovadataModel):
         max_length=100,
     )
 
+    capa = models.ImageField(
+        verbose_name="Capa",
+        upload_to="eventos/",
+        null=True,
+        blank=True,
+    )
+
     descricao = models.TextField(
         verbose_name="Descrição",
     )
