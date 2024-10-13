@@ -17,6 +17,7 @@
 {% block content %}
 <div class="flex flex-col items-center gap-8 2xl:flex-row">
 	<img class="w-56 h-auto lg:w-72" src="{% static 'srp_app/logo-borda.png' %}" alt="logo">
+	<div id="lottie-animation" style="width: 500px; height: 500px;"></div>
 
 	<div class="max-w-[43.75rem]">
 		<h1 class="text-2xl lg:text-5xl">Olá, {{ user.first_name }}</h1>
@@ -173,6 +174,7 @@
 
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.4/lottie.min.js"></script>
 
 <script>
 const swiper = new Swiper('.swiper.swiper--eventos', {
@@ -194,6 +196,15 @@ const swiper = new Swiper('.swiper.swiper--eventos', {
 		  spaceBetween: 32,
         },
     },
+});
+
+
+const animation = lottie.loadAnimation({
+	container: document.getElementById('lottie-animation'),
+	renderer: 'svg',
+	loop: true,
+	autoplay: true,
+	path: "{% static 'srp_app/success.json' %}" // Substitua pelo caminho real do arquivo JSON
 });
 </script>
 {% endblock %}
