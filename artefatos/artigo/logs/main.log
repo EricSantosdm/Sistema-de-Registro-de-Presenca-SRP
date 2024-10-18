@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.17)  9 SEP 2024 20:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.8.17)  18 OCT 2024 20:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -294,28 +294,28 @@ Underfull \hbox (badness 10000) in paragraph at lines 53--54
  \OT1/ptm/m/it/10 2) Ar-qui-te-tura Cli-ente/Servidor: [][] \OT1/ptm/m/n/10 A ar-qui-te-tura
  []
 
-[2] [3]) (./sections/3-abordagem.tex) (./sections/4-consideracoes_finais_trabalhos_futuros.tex) (logs/main.bbl
-Underfull \hbox (badness 10000) in paragraph at lines 65--71
+[2] [3]) (./sections/3-abordagem.tex) (./sections/4-trabalhos_relacionados.tex) (./sections/5-consideracoes_finais_trabalhos_futuros.tex) (logs/main.bbl [4]
+Underfull \hbox (badness 10000) in paragraph at lines 76--82
 []\OT1/ptm/m/sc/8 Martynowicz, S. M.  \OT1/ptm/m/n/8 9 be-nef[]^^Pcios da automa[][]ao
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--71
+Underfull \hbox (badness 10000) in paragraph at lines 76--82
 \OT1/ptm/m/n/8 de pro-ces-sos na ind[]ustria.  $https : / / itforum . com . br /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--103
+Underfull \hbox (badness 10000) in paragraph at lines 108--114
 []\OT1/ptm/m/sc/8 Roig, M.  \OT1/ptm/m/n/8 7 be-nef[]^^Pcios da automa[][]ao de pro-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--103
+Underfull \hbox (badness 10000) in paragraph at lines 108--114
 \OT1/ptm/m/n/8 ces-sos.  $https : / / www . administradores . com . br / noticias /
  []
 
 
-Underfull \hbox (badness 3954) in paragraph at lines 97--103
+Underfull \hbox (badness 3954) in paragraph at lines 108--114
 \OT1/ptm/m/n/8 7-[]bene^^Lcios-[]da-[]automacao-[]de-[]processos$, 2017.  Acesso em: 08
  []
 
@@ -331,20 +331,22 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4] (logs/main.aux) ) 
+[5
+
+] (logs/main.aux) ) 
 Here is how much of TeX's memory you used:
- 5277 strings out of 480154
- 84071 string characters out of 5893788
- 412300 words of memory out of 5000000
- 23162 multiletter control sequences out of 15000+600000
+ 5286 strings out of 480154
+ 84317 string characters out of 5893788
+ 412316 words of memory out of 5000000
+ 23168 multiletter control sequences out of 15000+600000
  508937 words of font info for 106 fonts, out of 8000000 for 9000
  61 hyphenation exceptions out of 8191
  55i,8n,62p,1122b,334s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on logs/main.pdf (4 pages, 102424 bytes).
+Output written on logs/main.pdf (5 pages, 106945 bytes).
 PDF statistics:
- 48 PDF objects out of 1000 (max. 8388607)
- 29 compressed objects within 1 object stream
+ 51 PDF objects out of 1000 (max. 8388607)
+ 31 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

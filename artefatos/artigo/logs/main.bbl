@@ -1,5 +1,12 @@
 \begin{thebibliography}{10}
 
+\bibitem{aranega2023}
+{\sc Aranega, G. A.~D., and Pera, B.~M.}
+\newblock Proposta de modernização da autenticação e contagem de presença
+  de alunos nas escolas.
+\newblock {\em XVII Encontro Latino Americano de Iniciação Científica
+  Júnior da Universidade do Vale do Paraíba\/} (2023).
+
 \bibitem{bernardo2011}
 {\sc Bernardo, L.}
 \newblock Aprenda a usar o qr code.
@@ -15,6 +22,10 @@
 {\sc Cougo, P.}
 \newblock {\em Modelagem Conceitual e projeto de banco de dados}.
 \newblock Elsevier, Rio de Janeiro, 1997.
+
+\bibitem{paula2023}
+{\sc de~Paula, L. d. S.~P., and de~Oliveira, M.~B.}
+\newblock Plataforma para gestão de eventos acadêmicos, 2023.
 
 \bibitem{aurelio}
 {\sc Ferreira, A. B. d.~H., Ferreira, M.~B., and dos Anjos, M.}
