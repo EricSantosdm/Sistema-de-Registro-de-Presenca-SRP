@@ -7,13 +7,76 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>QR CODE</title>
+
+    <style type="text/css">
+		@page {
+			size: A4;
+			margin: 1cm;
+		}
+		
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+		}
+		
+		h1 {
+			color: #1A1A1A;
+			text-align: center;
+			font-weight: bold;
+			margin-bottom: 0.5cm;
+		}
+		
+		p {
+			margin: 0.5cm 0;
+			line-height: 1.5;
+			text-align: center;
+		}
+		
+		.container {
+			position: relative;
+			text-align: center;
+			margin-top: 50px;
+		}
+
+		.qr-code {
+			margin-top: 6cm;
+		}
+		
+		.logo {
+			display: block;
+			width: 100px;
+			height: auto;	
+		}
+		
+		.footer {
+			width: 600px;
+			position: fixed;
+			bottom: 0.5cm;
+			left: 50%;
+			transform: translateX(-50%);
+			font-size: 14px;
+			color: #666;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	</style>
 </head>
 <body>
-	<h1>{{ title }}</h1>
-	<p>{{ text }}</p>
-	<div>
-		{% qr_from_text rota %}
-	</div>
-	<img src="{% static 'srp_app/logo-borda.png' %}" alt="">
+	<div class="container">
+		<h1>{{ title }}</h1>
+		<p>{{ text }}</p>
+
+		<div class="qr-code">
+			{% qr_from_text rota %}
+		</div>
+    </div>
+
+    <div class="footer">
+        <p>© 2024 SRP - Todos os direitos reservados.</p>
+		<img class="logo" src="{% static 'srp_app/logo.png' %}" alt="">
+    </div>
 </body>
 </html>
