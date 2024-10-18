@@ -88,8 +88,8 @@ Confira o artigo científico do projeto [aqui](artefatos/artigo/logs/main.pdf).
 - **Dimona**
 - **Emanuela**
 - **Eric**
-- **Flavio**
-- **Natalia**
+- **Flávio**
+- **Natália**
 
 ## Contribuição
 
