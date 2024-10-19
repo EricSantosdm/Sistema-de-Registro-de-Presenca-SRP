@@ -13,7 +13,6 @@ dj-static==0.0.6
 Django==4.2.5
 django-admin-list-filter-dropdown==1.0.3
 django-admin-rangefilter==0.13.1
-django-advanced-filters==2.0.0
 django-browser-reload==1.11.0
 django-crum==0.7.9
 django-debug-toolbar==4.2.0
@@ -41,7 +40,7 @@ MarkupPy==1.14
 mccabe==0.7.0
 mypy==1.5.1
 mypy-extensions==1.0.0
-novadata-utils==0.3.7
+novadata-utils==0.3.9
 odfpy==1.4.1
 openpyxl==3.1.5
 pillow==10.4.0

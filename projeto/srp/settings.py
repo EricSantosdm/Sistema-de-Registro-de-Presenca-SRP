@@ -41,7 +41,6 @@ INSTALLED_APPS = [
     "home",
     "srp_app",
     # Libs
-    "advanced_filters",
     "debug_toolbar",
     "django_admin_listfilter_dropdown",
     "django_browser_reload",

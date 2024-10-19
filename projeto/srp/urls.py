@@ -57,10 +57,6 @@ urlpatterns = (
         ),
         # Libs urls
         path(
-            "advanced_filters/",
-            include("advanced_filters.urls"),
-        ),
-        path(
             "__reload__/",
             include("django_browser_reload.urls"),
         ),
