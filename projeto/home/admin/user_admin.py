@@ -12,4 +12,3 @@ admin.site.unregister(User)
 @admin.register(User)
 class CustomUserAdmin(ModelAdmin, ImportExportModelAdmin, UserAdmin):
     pass
-    # inlines = [ProfileInline]
