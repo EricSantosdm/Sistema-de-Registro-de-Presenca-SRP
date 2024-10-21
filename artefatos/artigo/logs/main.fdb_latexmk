@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex logs/main"] 1729514763 "logs/main.aux" "logs/main.bbl" "logs/main" 1729514856
+["bibtex logs/main"] 1729515162 "logs/main.aux" "logs/main.bbl" "logs/main" 1729515507
   "/usr/share/texlive/texmf-dist/bibtex/bst/base/acm.bst" 1292289607 21064 c61a48664f3c347ce7f73c1a6a530506 ""
-  "logs/main.aux" 1729514856 4160 046addb51d5fbabc2f582beb4af0493f "pdflatex"
+  "logs/main.aux" 1729515507 4319 bc7dd97e2ff07b3f3f0e07639a20da23 "pdflatex"
   "references.bib" 1729293436 7508 9bee805fbf53c8c391edca17dd87f584 ""
   (generated)
   "logs/main.bbl"
   "logs/main.blg"
-["pdflatex"] 1729514855 "/home/natalia/natalia/projetos_ufersa/srp_workspace/srp/artefatos/artigo/main.tex" "logs/main.pdf" "main" 1729514856
+["pdflatex"] 1729515506 "/home/natalia/natalia/projetos_ufersa/srp_workspace/srp/artefatos/artigo/main.tex" "logs/main.pdf" "main" 1729515507
   "/etc/texmf/web2c/texmf.cnf" 1723914128 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/natalia/natalia/projetos_ufersa/srp_workspace/srp/artefatos/artigo/main.tex" 1729293628 2389 8c2a9dbeb128245c9c2b423f9e6389dc ""
+  "/home/natalia/natalia/projetos_ufersa/srp_workspace/srp/artefatos/artigo/main.tex" 1729514970 2434 30c7cbf57ac9d230f95cb5948f94d247 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1136768653 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -85,14 +85,15 @@
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1723914479 162899 515de6df2324cca4eba6407bef60e07c ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1723914484 1436644 04492bdeecd1ffbadc497e495293d1f8 ""
   "IEEEtran.cls" 1725821179 281957 5b2e4fa15b0f7eabb840ebf67df4c0f7 ""
-  "logs/main.aux" 1729514856 4160 046addb51d5fbabc2f582beb4af0493f "pdflatex"
-  "logs/main.bbl" 1729514763 4566 662b1b6a012d513fbbd9bcb74d565966 "bibtex logs/main"
-  "main.tex" 1729293628 2389 8c2a9dbeb128245c9c2b423f9e6389dc ""
+  "logs/main.aux" 1729515507 4319 bc7dd97e2ff07b3f3f0e07639a20da23 "pdflatex"
+  "logs/main.bbl" 1729515162 4566 662b1b6a012d513fbbd9bcb74d565966 "bibtex logs/main"
+  "main.tex" 1729514970 2434 30c7cbf57ac9d230f95cb5948f94d247 ""
   "sections/1-introducao.tex" 1725823974 2481 f78be092a8739af3096f72fdb0db15e6 ""
   "sections/2-fundamentacao_teorica.tex" 1729513998 10402 a2cfc686862d76339798c763984cd8ea ""
   "sections/3-abordagem.tex" 1729514277 1219 c941d07abc9ac3823e89b3faba2d40a0 ""
   "sections/4-trabalhos_relacionados.tex" 1729293799 1706 b98c71c4c2d954d661f4b978ee20007b ""
-  "sections/5-consideracoes_finais_trabalhos_futuros.tex" 1729514855 764 1f7ee4a8dd6a2e16b726e06c7dc9ff42 ""
+  "sections/5-resultados_discussoes.tex" 1729515507 1157 eca9c7eaabf703f9342346d018bbfe94 ""
+  "sections/6-consideracoes_finais_trabalhos_futuros.tex" 1729514862 764 1f7ee4a8dd6a2e16b726e06c7dc9ff42 ""
   (generated)
   "logs/main.aux"
   "logs/main.log"
