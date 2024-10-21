@@ -72,14 +72,6 @@
 \newblock Bookman, Porto Alegre, 2007.
 \newblock Tradução de João Tortello.
 
-\bibitem{martynowicz2018}
-{\sc Martynowicz, S.~M.}
-\newblock 9 benefícios da automação de processos na indústria.
-\newblock
-  \url{https://itforum.com.br/9-beneficios-da-automacao-de-processos-na-industria/},
-  2018.
-\newblock Acesso em: 08 de agosto de 2024.
-
 \bibitem{meireles2010}
 {\sc Meireles, A.}
 \newblock {\em Desenvolvimento de uma aplicação web para gerenciamento de
@@ -137,12 +129,5 @@
   Desenvolvimento de Software com Produtividade}.
 \newblock Independente, [S. l.], 2020.
 \newblock Acesso em: 04 set. 2024.
-
-\bibitem{vechiato2019}
-{\sc Vechiato, F.~L., Vidotti, S. A. B.~G., Coneglian, C.~S., Roa-Martinez,
-  S.~M., and Santar{\'e}m~Segundo, J.~E.}
-\newblock Web, web sem{\^a}ntica e web pragm{\'a}tica: um posicionamento da
-  arquitetura da informa{\c{c}}{\~a}o.
-\newblock {\em Informa{\c{c}}{\~a}o \& Sociedade-Estudos\/} (2019).
 
 \end{thebibliography}
